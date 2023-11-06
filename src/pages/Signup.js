@@ -1,12 +1,5 @@
-import { UserContext } from "../App"
-import { useContext } from "react"
 
-import { useNavigate } from "react-router-dom"
-
-
-export default function Login(){
-    const { userState, setUserState } = useContext(UserContext)
-    const navigate = useNavigate()
+export default function Signup(){
 
     const handleFormSubmit = (e) => {
         e.preventDefault()
@@ -17,7 +10,7 @@ export default function Login(){
         }
         
     
-    fetch('http://localhost:8080/login', {
+    fetch('http://localhost:8080/signup', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -25,10 +18,7 @@ export default function Login(){
         body: JSON.stringify(formData),
     })
         .then(res => res.json())
-        .then(data => {
-            setUserState(data)
-            navigate('/')
-        })
+        .then(data => console.log(data))
         
 }
     return(
@@ -42,7 +32,7 @@ export default function Login(){
                 Password:
                 <input type="password" name="password" />
                 </label>
-                <button>Login</button>
+                <button>Signup</button>
                 </form>
         
     )

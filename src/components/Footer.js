@@ -2,8 +2,9 @@ export default function Footer (){
     return(
         <footer>
           <p>
-               <small>
-                Copyright @{new Date().getFullYear()} | All rights reserved
+               <small >
+                <hr />
+                Copyright @{new Date().getFullYear()} | @BensonOptimiste | All rights reserved
                 </small> 
             </p>
         </footer>

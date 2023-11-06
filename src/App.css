@@ -11,7 +11,7 @@ body {
 }
 
 header {
-	background-color: #333;
+	background-color: #d35252;
 }
 
 header > ul {
@@ -25,8 +25,18 @@ header > ul > li {
 	height: 100%;
 }
 
+nav > ul{
+display: flex;
+list-style: none;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
 header > ul > li:hover {
-	background-color: #111;
+	background-color: #d98080;
+	text-align: center;
+	padding: .5em;
 }
 
 header > ul > li > a {
@@ -41,15 +51,16 @@ header > ul > li > a {
 .cardContainer {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1200px;
+	max-width: 1500px;
+	
 }
 
 .singleCard {
-	max-width: 300px;
-	max-height: 300px;
+	max-width: 350px;
+	max-height: 350px;
 	padding: 2rem;
-	margin: 2rem;
-	border: 1px solid rgb(70, 70, 70);
+	margin: 1rem;
+	border: 2px solid rgb(70, 70, 70);
 	border-radius: 5px;
 }
 
@@ -64,4 +75,7 @@ footer {
 	padding: 2rem;
 	height: 200px;
 	object-fit: cover;
+	/* display: flex;
+	justify-content: center; */
 }
+
