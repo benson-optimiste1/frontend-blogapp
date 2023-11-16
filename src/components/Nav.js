@@ -10,6 +10,7 @@ export default function Nav (){
                 <li><a href="/new-post"  rel="noopener noreferrer">Add Post</a></li>
                 <li><a href="/login"  rel="noopener noreferrer">Login</a></li>
                 <li><a href="/signup"  rel="noopener noreferrer">Signup</a></li>
+                <li><a href="/signup"  rel="noopener noreferrer">Signup</a></li>
                <li style={{color: 'white'}}>{userState.email}</li>
             </ul>
         
